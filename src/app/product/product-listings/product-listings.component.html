@@ -1,0 +1,93 @@
+<div class="container">
+
+    <div class="myclass">
+        <h1>welcome!!</h1>
+        <h2>cake cake cake!</h2>
+    </div>
+    <br>
+    
+    <div class="row">
+        <div *ngFor="let product of products; let productId = index" class="col">
+            
+            <div class="card" >
+                <img src="./assets/img/image1-313-234.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <a [routerLink]= "[ productId ]" >
+                        <h5 class="card-title">{{ product.name }}</h5>
+                    </a>
+                    <p class="card-text">{{ product.description }}</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">{{ product.manufacturer }}</li>
+                    <li class="list-group-item">Price:{{ product.price }}</li>
+                    <li class="list-group-item">Stock:{{ product.stock }}</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                </div>
+            </div>
+
+        </div>
+
+      <div class="col">
+        <div class="card" >
+            <img src="./assets/img/image1-313-234.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">An item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+            </ul>
+            <div class="card-body">
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+            </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" >
+            <img src="./assets/img/image1-313-234.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">An item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+            </ul>
+            <div class="card-body">
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+            </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" >
+            <img src="./assets/img/image1-313-234.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">An item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+            </ul>
+            <div class="card-body">
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
